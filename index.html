@@ -1,6 +1,6 @@
 <body>
 
-<!-- 🔐 LOGIN SCREEN -->
+<!-- LOGIN SCREEN -->
 <div id="loginBox">
   <h2>Login</h2>
 
@@ -10,8 +10,11 @@
   <button onclick="login()">Login</button>
 </div>
 
-<!-- 🟢 MAIN APP (HIDDEN UNTIL LOGIN) -->
+<!-- MAIN APP -->
 <div id="app" style="display:none;">
+
+  <button onclick="logout()">Logout</button>
+  <button onclick="printTickets()">Print Tickets</button>
 
   <h1>IT Support Ticket System</h1>
 
@@ -29,6 +32,9 @@
 
 </div>
 
+<script src="tickets.js"></script>
+<script src="login.js"></script>
+<script src="print.js"></script>
 <script src="app.js"></script>
 
 </body>
